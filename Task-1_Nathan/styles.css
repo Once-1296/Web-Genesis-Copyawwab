@@ -1,0 +1,21 @@
+.label{
+    border: 2px solid black;
+    width: 250px;
+    margin: 250px auto;
+    padding: 0  10px;
+}
+
+* {
+    box-sizing: border-box;
+  } 
+
+
+
+.bold {
+    font-weight: 800;
+  }
+
+  .divider {
+    border-bottom: 1px solid #888989;
+    margin: 2px 0;
+  }
