@@ -1,0 +1,78 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  /* Hide the checkbox */
+  #sidebar-toggle {
+    display: none;
+  }
+  
+  /* Sidebar Toggle Label */
+  .sidebar-toggle-label {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 2;
+    color: #333;
+  }
+  
+  /* Sidebar Styles */
+  .sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    left: -250px;
+    transition: left 0.3s ease;
+    z-index: 1;
+  }
+  
+  .sidebar h2 {
+    padding: 20px;
+    margin: 0;
+    background-color: #444;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar ul li {
+    padding: 15px 20px;
+    border-bottom: 1px solid #444;
+  }
+  
+  .sidebar ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .sidebar ul li:hover {
+    background-color: #555;
+  }
+  
+  /* Main Content Styles */
+  .main-content {
+    margin-left: 0;
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+    width: 100%;
+  }
+  
+  /* Collapse and Expand Sidebar */
+  #sidebar-toggle:checked ~ .sidebar {
+    left: 0;
+  }
+  
+  #sidebar-toggle:checked ~ .main-content {
+    margin-left: 250px;
+  }
