@@ -1,78 +1,76 @@
-/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  /* Hide the checkbox */
-  #sidebar-toggle {
-    display: none;
-  }
-  
-  /* Sidebar Toggle Label */
-  .sidebar-toggle-label {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    font-size: 24px;
-    cursor: pointer;
-    z-index: 2;
-    color: #333;
-  }
-  
-  /* Sidebar Styles */
-  .sidebar {
-    width: 250px;
-    height: 100vh;
-    background-color: #333;
-    color: white;
-    position: fixed;
-    left: -250px;
-    transition: left 0.3s ease;
-    z-index: 1;
-  }
-  
-  .sidebar h2 {
-    padding: 20px;
-    margin: 0;
-    background-color: #444;
-  }
-  
-  .sidebar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .sidebar ul li {
-    padding: 15px 20px;
-    border-bottom: 1px solid #444;
-  }
-  
-  .sidebar ul li a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .sidebar ul li:hover {
-    background-color: #555;
-  }
-  
-  /* Main Content Styles */
-  .main-content {
-    margin-left: 0;
-    padding: 20px;
-    transition: margin-left 0.3s ease;
-    width: 100%;
-  }
-  
-  /* Collapse and Expand Sidebar */
-  #sidebar-toggle:checked ~ .sidebar {
-    left: 0;
-  }
-  
-  #sidebar-toggle:checked ~ .main-content {
-    margin-left: 250px;
-  }
+  margin: 0;
+  padding: 0;
+  background-color: #212121;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+::placeholder{
+  color: rgb(153, 149, 149);
+  font-size: large;
+  position: absolute;
+  bottom: 1px;
+}
+h1 {
+  font-size: 1.9rem;
+  margin-bottom: 20px;
+}
+.input-box {
+  display: flex;
+  align-items: center;
+  background-color: rgb(48, 48, 48);
+  padding: 12px;
+  border-radius: 25px;
+  width:850px;
+  height:12%;
+}
+.ph{
+  position: relative;
+  bottom: 28px;
+}
+.voice{
+  position: absolute;
+  right: 30%;
+}
+.input-box input {
+  flex-grow: 1;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+}
+.input-box button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+.buttons {
+  display: flex;
+  gap: 8px;
+  margin-top: 15px;
+}
+.buttons button {
+  background-color: #212121;
+  border: 1px solid #4a4b50;
+  color: rgb(146, 144, 144);
+  padding: 8px 16px;
+  border-radius: 19px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  height: 40px
+}
+.buttons button:hover {
+  background-color: rgb(103, 103, 103);
+  color: white;
+}

@@ -4,81 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ChatGPT Clone</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #202123;
-            color: white;
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-        .container {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        h1 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-        }
-        .input-box {
-            display: flex;
-            align-items: center;
-            background-color: #343541;
-            padding: 12px;
-            border-radius: 10px;
-            width: 40%;
-        }
-        .input-box input {
-            flex-grow: 1;
-            background: transparent;
-            border: none;
-            color: white;
-            font-size: 1rem;
-            outline: none;
-        }
-        .input-box button {
-            background: none;
-            border: none;
-            color: white;
-            cursor: pointer;
-            font-size: 1.2rem;
-        }
-        .buttons {
-            display: flex;
-            gap: 10px;
-            margin-top: 15px;
-        }
-        .buttons button {
-            background-color: #343541;
-            border: none;
-            color: white;
-            padding: 8px 16px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 0.9rem;
-        }
-        .buttons button:hover {
-            background-color: #4a4b50;
-        }
-    </style>
+    <link rel="stylesheet" href="mohd4style.css">
 </head>
 <body>
     <div class="container">
         <h1>What can I help with?</h1>
         <div class="input-box">
+            <div class="ph">
             <input type="text" placeholder="Ask anything">
+        </div>
+        <div class="voice">
             <button>&#128264;</button>
         </div>
+        </div>
         <div class="buttons">
-            <button>Create image</button>
-            <button>Analyze data</button>
-            <button>Summarize text</button>
+            <button>Get advice</button>
             <button>Code</button>
-            <button>Brainstorm</button>
+            <button>Summarize text</button>
+            <button>Make a plan</button>
             <button>More</button>
         </div>
     </div>
